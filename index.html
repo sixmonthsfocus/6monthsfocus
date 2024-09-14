@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to CSS file -->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#one-on-one">One-On-One</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="https://www.youtube.com/channel/YourChannelID" target="_blank">Blog</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#" id="contactLink">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Form Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country">
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <!-- Extra Content to Ensure Scrolling -->
+    <section id="extra-content">
+        <h2>Extra Content</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.</p>
+        <!-- Repeat or add more content as needed -->
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" title="Go to top">Top</button>
+
+    <footer>
+        <p>&copy; 2024 Six Months Focus</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link to JavaScript file -->
+</body>
+
+</html>

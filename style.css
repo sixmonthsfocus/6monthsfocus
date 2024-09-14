@@ -1,0 +1,167 @@
+/* Basic reset and body styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation Tabs */
+header {
+    background-color: #6D1F1F;
+    /* Dark Red Color */
+    padding: 10px 0;
+    position: fixed;
+    /* Fixed position to stay at the top */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    /* Ensure it stays above other content */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    /* Center the tabs horizontally */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: #6D1F1F;
+    /* Dark Red Color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: block;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    /* Ensure it’s on top of other content */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* Scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* Align items in a vertical column */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    /* Stack form elements vertically */
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"] {
+    margin-top: 12px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+form input[type="submit"] {
+    margin-top: 20px;
+    background-color: #6D1F1F;
+    /* Dark Red Color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #5A1616;
+    /* Darker shade on hover */
+}
+
+/* Scroll to Top Button Styles */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    /* Hidden by default */
+    background-color: #6D1F1F;
+    /* Dark Red Color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #5A1616;
+    /* Darker shade on hover */
+}
+
+/* Footer styles */
+footer {
+    margin-top: auto;
+    /* Pushes footer to the bottom of the page */
+    background-color: #6D1F1F;
+    /* Dark Red Color */
+    color: white;
+    text-align: center;
+    /* Center text horizontally */
+    padding: 1rem;
+    font-size: 16px;
+}
+
+/* Additional styling for sections */
+section {
+    padding: 20px;
+    margin: 80px 0;
+    /* Ensure content is visible below fixed header */
+}
